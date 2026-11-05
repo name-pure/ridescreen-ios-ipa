@@ -1,20 +1,36 @@
-RideScreen iOS 1.5.0 (build 7) · iOS 15 ขึ้นไป
+# RideScreen iOS 1.6.0 (build 8)
 
-ไฟล์แนบที่อัปโหลดมีเฉพาะ IPA หนึ่งไฟล์ ยังต้องเซ็นสำหรับ iPhone ด้วย Sideloadly บน Windows ก่อนติดตั้ง การแตะ IPA ในแอป Files อย่างเดียวติดตั้งไม่ได้
+iOS 15 ขึ้นไป · ไฟล์สำหรับติดตั้งมี IPA หนึ่งไฟล์ ไม่มีซอร์สโค้ดใน repository นี้
 
-เพิ่ม OpenFreeMap ทั้งหน้าปักหมุดและจอรถ พร้อม Wide map, Custom และชื่อบนจอที่แก้ไขได้ โหมดปิดจอยังเป็น beta และยังไม่ได้ทดสอบภาคสนามหรือวัดความร้อนในรุ่นนี้ Apple Maps ยังต้องเปิดแอปอยู่ด้านหน้า
+[ดาวน์โหลด RideScreen-Mirror-Tabs-needs-signing.ipa](https://github.com/name-pure/ridescreen-ios-ipa/raw/refs/heads/codex/ipa-only/RideScreen-Mirror-Tabs-needs-signing.ipa)
+
+เพิ่มโหมด Mirror หน้าจอ iPhone และแยกเป็น 4 แท็บ **เชื่อมต่อ / นำทาง / Mirror / ตั้งค่า** การสลับแท็บเก็บสถานะการเชื่อมต่อและปลายทางไว้ มี OpenFreeMap, OpenStreetMap, Apple Maps, Wide map, Custom และชื่อบนจอที่แก้ไขได้ตามเดิม
 
 ## ติดตั้งบน Windows
-1. ดาวน์โหลดไฟล์ .ipa ใน Assets ลงคอม หากไม่เห็น Release ให้เข้าสู่บัญชี GitHub ที่เข้าถึง repository ส่วนตัวนี้ได้
-2. ติดตั้งหรือเปิด [Sideloadly](https://sideloadly.io/) หากยังไม่ได้ติดตั้ง ให้ทำตามข้อกำหนด iTunes/iCloud สำหรับ Windows ที่เว็บไซต์ทางการระบุ
-3. ต่อ iPhone ด้วย USB ปลดล็อก แล้วกด Trust เมื่อมีข้อความถาม เลือก iPhone ใน Sideloadly
-4. ลากไฟล์ IPA ลง Sideloadly ใช้ Apple Account เดิมที่ใช้ลง RideScreen และ Bundle ID เดิม เพื่ออัปเดตทับแอปเดิม
-5. เริ่มติดตั้ง กรอกรหัสผ่านและรหัสยืนยันใน Sideloadly เมื่อระบบถาม แล้วรอจนติดตั้งเสร็จ
-6. หากขึ้น Untrusted Developer: Settings > General > VPN & Device Management > เลือกบัญชีผู้พัฒนา > Trust
-7. หากขึ้น Developer Mode Required: Settings > Privacy & Security > Developer Mode > เปิด แล้ว Restart และยืนยัน Turn On หลังเครื่องเปิดใหม่
-8. เปิด RideScreen เลือก OpenFreeMap เปิด Show the map แล้วเชื่อม Wi-Fi จอรถและกด Connect หากต้องการทดสอบล็อกจอ ให้เปิด Screen-off navigation (beta) ก่อน Connect และเริ่มนำทางขณะเปิดแอป
 
-บัญชี Apple ฟรีต้องเซ็นใหม่ประมาณทุก 7 วัน เปิด Auto Refresh ของ Sideloadly หรือเชื่อมคอมแล้วติดตั้งทับด้วยบัญชีเดิมอีกครั้ง
+1. ดาวน์โหลด IPA ลงคอม เปิด [Sideloadly](https://sideloadly.io/) และทำตามข้อกำหนดไดรเวอร์/iTunes/iCloud ที่เว็บไซต์ทางการระบุ
+2. ต่อ iPhone ด้วย USB ปลดล็อก แล้วกด **Trust** หากมีถาม เลือก iPhone ใน Sideloadly
+3. ลาก IPA ลง Sideloadly ใช้ Apple Account และ Bundle ID เดิมเพื่ออัปเดตทับแอปเดิม
+4. **เก็บ ScreenBroadcast extension ไว้** หากมีตัวเลือก **Remove app extensions** ให้ปิด มิฉะนั้น Mirror จะใช้ไม่ได้
+5. กด **Start** และกรอกรหัสผ่าน/รหัสยืนยันใน Sideloadly เมื่อระบบถาม รอจนติดตั้งเสร็จ
+6. หากขึ้น **Untrusted Developer:** Settings → General → VPN & Device Management → บัญชีผู้พัฒนา → Trust
+7. หากขึ้น **Developer Mode Required:** Settings → Privacy & Security → Developer Mode → เปิด แล้ว Restart และยืนยัน Turn On
 
-หาก Sideloadly ไม่พบ iPhone ให้ตรวจว่า iTunes พบเครื่องและกด Trust แล้ว ดู [FAQ ทางการ](https://sideloadly.io/faq) สำหรับไดรเวอร์และข้อผิดพลาด
+แตะไฟล์ IPA ในแอป Files อย่างเดียวติดตั้งไม่ได้ บัญชี Apple ฟรีต้องเซ็นใหม่ประมาณทุก 7 วัน ใช้ Auto Refresh ของ Sideloadly หรือเชื่อมคอมแล้วติดตั้งทับด้วยบัญชีเดิม ดู [FAQ ทางการ](https://sideloadly.io/faq) หากหา iPhone ไม่พบหรือมีข้อผิดพลาด
+
+## ใช้ Mirror
+
+1. สแกน/วาง QR ในแท็บ **เชื่อมต่อ** แล้วเข้า Settings → Wi-Fi เพื่อเชื่อมเครือข่ายจอรถ เปิด Cellular Data ไว้
+2. กลับเข้าแอป เลือก **Mirror → Prepare mirror** ปุ่มนี้หยุดแดชบอร์ดและการนำทางเดิม
+3. แตะไอคอน broadcast ของ iOS แล้วเลือก **RideScreen Screen → Start Broadcast** รอการนับถอยหลัง
+4. เมื่อเริ่มแชร์ ปุ่มเปิด Apple Maps, Google Maps, Waze, Spotify และ Apple Music จะใช้ได้ เปิดแอปที่ติดตั้งอยู่แล้วและควบคุมจาก iPhone หมุนแนวนอนเพื่อใช้พื้นที่จอรถมากขึ้น
+5. หยุดผ่านตัวบันทึกหน้าจอ/Control Center หรือกลับเข้า RideScreen → **Stop screen sharing**
+
+Mirror ต้องเปิดจอและปลดล็อก iPhone อยู่ ส่งเฉพาะภาพ เสียงออกหูฟัง/อินเตอร์คอม Bluetooth ของ iPhone การแจ้งเตือนอาจปรากฏบนจอรถ โหมดนี้ไม่ใช่ CarPlay และใช้พร้อมแดชบอร์ดไม่ได้
+
+## ใช้นำทางแบบปิดจอ
+
+เลือก OpenStreetMap หรือ OpenFreeMap ในแท็บ **ตั้งค่า** เปิด **Screen-off navigation (beta)** แล้ว Connect และเริ่มนำทางขณะเปิดแอป ก่อนล็อกด้วยปุ่มด้านข้าง อย่าปัดปิดแอป Apple Maps แบบฝังยังต้องเปิด RideScreen อยู่ด้านหน้า และ Mirror ไม่ใช่โหมดปิดจอ
+
+ตรวจ build, unit tests และการสลับทั้ง 4 แท็บบนตัวจำลอง iPhone/iPad แล้ว ยังต้องทดสอบการแชร์ข้ามแอป การติดตั้งด้วยบัญชีฟรี และการเชื่อมจอ Zontes 368E จริง รวมถึงความหน่วง ความร้อนและแบตเตอรี่
 
