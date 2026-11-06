@@ -1,12 +1,21 @@
-# จอรถ iOS 1.10.0 (build 14)
+# จอรถ iOS 1.10.1 (build 15)
 
 iOS 15 ขึ้นไป · repository นี้มีไฟล์ติดตั้ง IPA คู่มือ และภาพตัวอย่าง ไม่มีซอร์สโค้ดแอป
 
-[ดาวน์โหลด IPA รุ่นล่าสุด](https://github.com/name-pure/ridescreen-ios-ipa/releases/download/v1.10.0-build14/Motorcycle-Display-iOS-needs-signing.ipa)
+[ดาวน์โหลด IPA รุ่นล่าสุด](https://github.com/name-pure/ridescreen-ios-ipa/releases/download/v1.10.1-build15/Motorcycle-Display-iOS-needs-signing.ipa)
 
 UI ใหม่แนว Atlas ทั้ง 4 แท็บ **เชื่อมต่อ / นำทาง / Mirror / ตั้งค่า** และข้อความบนจอรถ สลับไทย/อังกฤษได้ ใช้ฟอนต์ Noto Sans Thai แบบฝังในแอป เปลี่ยนชื่อบน iPhone เป็น **จอรถ** และชื่อใน Screen Broadcast เป็น **Screen Share** ชื่อบนจอรถเริ่มต้นว่างและตั้งเองได้
 
 คง OpenStreetMap, OpenFreeMap, Apple Maps, Wide map และ Custom การสลับแท็บหรือภาษาเก็บสถานะเชื่อมต่อและจุดหมายไว้
+
+## แก้การรอเครือข่ายในรุ่น 1.10.1
+
+- การเชื่อมต่อหลักรอให้ Wi-Fi ฟื้นตัวจากสถานะ `waiting` ได้จนถึงกำหนด 4 วินาที แทนการยกเลิกทันที
+- ล็อกการเชื่อมต่อแสดง path / reason / interface และเก็บข้อผิดพลาดล่าสุดเมื่อหมดเวลา
+- หยุดงาน probe เก่าและป้องกัน timer/retry ของรอบเก่ารบกวนเมื่อกดหยุดแล้วเริ่มใหม่
+- ปุ่มคัดลอกข้อมูลวิเคราะห์ใน Settings รวมผลสแกน IP/พอร์ตครั้งล่าสุด พร้อมเวลาเริ่มตรวจและสถานะ ส่งจากปุ่มเดิมได้เลย
+
+การแก้นี้รองรับเครือข่ายที่ไม่พร้อมชั่วคราว ยังไม่ยืนยันว่าจะแก้ `Network is down` ที่ค้างตลอดได้ ต้องทดสอบ Wi-Fi และโปรโตคอลกับ 368G v.2 จริง
 
 ## ตรวจพอร์ตจาก iPhone ในรุ่น 1.10.0
 
