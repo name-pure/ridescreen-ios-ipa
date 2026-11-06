@@ -1,6 +1,6 @@
 # จอรถ iOS 1.8.1 (build 12)
 
-iOS 15 ขึ้นไป · repository นี้มีไฟล์ติดตั้ง IPA หนึ่งไฟล์และคู่มือ ไม่มีซอร์สโค้ดแอป
+iOS 15 ขึ้นไป · repository นี้มีไฟล์ติดตั้ง IPA คู่มือ และภาพตัวอย่าง ไม่มีซอร์สโค้ดแอป
 
 [ดาวน์โหลด IPA รุ่นล่าสุด](https://github.com/name-pure/ridescreen-ios-ipa/releases/download/v1.8.1-build12/Motorcycle-Display-iOS-needs-signing.ipa)
 
@@ -33,6 +33,10 @@ UI ใหม่แนว Atlas ทั้ง 4 แท็บ **เชื่อม�
 5. กด **Start** กรอกรหัสผ่าน/รหัสยืนยันใน Sideloadly ตามที่ระบบถาม รอจนติดตั้งเสร็จ
 6. หากขึ้น **Untrusted Developer:** Settings → General → VPN & Device Management → บัญชีผู้พัฒนา → Trust
 7. หากขึ้น **Developer Mode Required:** Settings → Privacy & Security → Developer Mode → เปิด แล้ว Restart และยืนยัน Turn On
+
+ตัวอย่างเมื่อติดตั้งเสร็จ: Sideloadly แสดง **Done.** และ **100%** จากนั้นเปิดแอป **จอรถ** บน iPhone ได้
+
+![ตัวอย่าง Sideloadly เมื่อติดตั้ง IPA เสร็จ แสดง Done และ 100%](docs/images/sideloadly-install-done.png)
 
 แตะ IPA ใน Files อย่างเดียวติดตั้งไม่ได้ บัญชีฟรีต้องเซ็นใหม่ตามอายุใบรับรอง ใช้ Auto Refresh หรือต่อคอมแล้วติดตั้งทับด้วยบัญชีเดิม ดู [FAQ ทางการ](https://sideloadly.io/faq) สำหรับเงื่อนไขและการแก้ปัญหา
 
